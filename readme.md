@@ -1,4 +1,4 @@
-# Install and run docker (How to)
+# Install and run docker
 
 ## Docker installation
 
