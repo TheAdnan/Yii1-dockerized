@@ -1,0 +1,216 @@
+
+sh docker-up.sh
+
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/src/php/ext/gd/modules
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+
+Build complete.
+Don't forget to run 'make test'.
+
+Installing shared extensions:     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/
+Installing header files:          /usr/local/include/php/
+find . -name \*.gcno -o -name \*.gcda | xargs rm -f
+find . -name \*.lo -o -name \*.o | xargs rm -f
+find . -name \*.la -o -name \*.a | xargs rm -f
+find . -name \*.so | xargs rm -f
+find . -name .libs -a -type d|xargs rm -rf
+rm -f libphp.la       modules/* libs/*
+Configuring for:
+PHP Api Version:         20170718
+Zend Module Api No:      20170718
+Zend Extension Api No:   320170718
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for a sed that does not truncate output... /bin/sed
+checking for cc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking how to run the C preprocessor... cc -E
+checking for icc... no
+checking for suncc... no
+checking whether cc understands -c and -o together... yes
+checking for system library directory... lib
+checking if compiler supports -R... no
+checking if compiler supports -Wl,-rpath,... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for PHP prefix... /usr/local
+checking for PHP includes... -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib
+checking for PHP extension directory... /usr/local/lib/php/extensions/no-debug-non-zts-20170718
+checking for PHP installed headers prefix... /usr/local/include/php
+checking if debug is enabled... no
+checking if zts is enabled... no
+checking for re2c... re2c
+checking for re2c version... 0.16 (ok)
+checking for gawk... no
+checking for nawk... nawk
+checking if nawk is broken... no
+checking for iconv support... yes, shared
+checking for iconv... yes
+checking if iconv is glibc's... yes
+checking if iconv supports errno... yes
+checking if iconv supports //IGNORE... no
+checking if your cpp allows macro usage in include lines... yes
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognize dependent libraries... pass_all
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking the maximum length of command line arguments... 1572864
+checking command to parse /usr/bin/nm -B output from cc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC
+checking if cc PIC flag -fPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+
+creating libtool
+appending configuration tag "CXX" to libtool
+configure: creating ./config.status
+config.status: creating config.h
+/bin/bash /usr/src/php/ext/iconv/libtool --mode=compile cc -I"/usr/include" -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/usr/src/php/ext/iconv -DPHP_ATOM_INC -I/usr/src/php/ext/iconv/include-I/usr/src/php/ext/iconv/main -I/usr/src/php/ext/iconv -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -DHAVE_CONFIG_H  -I/usr/include -fstack-protector-strong -fpic -fpie -O2   -c /usr/src/php/ext/iconv/iconv.c -o iconv.lo
+mkdir .libs
+ cc -I/usr/include -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/usr/src/php/ext/iconv -DPHP_ATOM_INC -I/usr/src/php/ext/iconv/include -I/usr/src/php/ext/iconv/main -I/usr/src/php/ext/iconv -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -DHAVE_CONFIG_H -I/usr/include -fstack-protector-strong -fpic -fpie -O2 -c /usr/src/php/ext/iconv/iconv.c  -fPIC -DPIC -o .libs/iconv.o
+/bin/bash /usr/src/php/ext/iconv/libtool --mode=link cc -DPHP_ATOM_INC -I/usr/src/php/ext/iconv/include -I/usr/src/php/ext/iconv/main -I/usr/src/php/ext/iconv -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -DHAVE_CONFIG_H  -I/usr/include -fstack-protector-strong -fpic -fpie -O2  -L/usr/lib -Wl,-O1 -Wl,--hash-style=both -pie -o iconv.la -export-dynamic -avoid-version -prefer-pic -module -rpath /usr/src/php/ext/iconv/modules  iconv.lo
+cc -shared  .libs/iconv.o  -L/usr/lib  -Wl,-O1 -Wl,--hash-style=both -Wl,-soname -Wl,iconv.so -o .libs/iconv.so
+creating iconv.la
+(cd .libs && rm -f iconv.la && ln -s ../iconv.la iconv.la)
+/bin/bash /usr/src/php/ext/iconv/libtool --mode=install cp ./iconv.la /usr/src/php/ext/iconv/modules
+cp ./.libs/iconv.so /usr/src/php/ext/iconv/modules/iconv.so
+cp ./.libs/iconv.lai /usr/src/php/ext/iconv/modules/iconv.la
+PATH="$PATH:/sbin" ldconfig -n /usr/src/php/ext/iconv/modules
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/src/php/ext/iconv/modules
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+
+Build complete.
+Don't forget to run 'make test'.
+
+Installing shared extensions:     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/
+Installing header files:          /usr/local/include/php/
+
+warning: iconv (iconv.so) is already loaded!
+
+find . -name \*.gcno -o -name \*.gcda | xargs rm -f
+find . -name \*.lo -o -name \*.o | xargs rm -f
+find . -name \*.la -o -name \*.a | xargs rm -f
+find . -name \*.so | xargs rm -f
+find . -name .libs -a -type d|xargs rm -rf
+rm -f libphp.la       modules/* libs/*
+Removing intermediate container 984e89596978
+ ---> 601bb2b247b8
+Step 5/14 : COPY docker.conf  /etc/apache2/sites-available/000-default.conf
+ ---> d58b31c006c9
+Step 6/14 : COPY hosts  /etc/hosts
+ ---> 72daf060a8b0
+Step 7/14 : RUN a2enmod rewrite
+ ---> Running in 928fac2e0986
+Enabling module rewrite.
+To activate the new configuration, you need to run:
+  service apache2 restart
+Removing intermediate container 928fac2e0986
+ ---> aab40968f7ab
+Step 8/14 : RUN apache2ctl stop && apache2ctl start
+ ---> Running in e0e80b6c7f37
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+httpd (no pid file) not running
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+Removing intermediate container e0e80b6c7f37
+ ---> c1743886bd5e
+Step 9/14 : WORKDIR /var/www/html
+ ---> Running in 0d7ca48b0983
+Removing intermediate container 0d7ca48b0983
+ ---> 098bcb80045b
+Step 10/14 : RUN mkdir assets
+ ---> Running in 0eba6012e189
+Removing intermediate container 0eba6012e189
+ ---> 89caf6365998
+Step 11/14 : WORKDIR /var/www/html/protected
+ ---> Running in fd95b16fb3cd
+Removing intermediate container fd95b16fb3cd
+ ---> b99c548b4a29
+Step 12/14 : RUN mkdir runtime
+ ---> Running in ff1e1b3864d3
+Removing intermediate container ff1e1b3864d3
+ ---> 098d2cc88bc0
+Step 13/14 : RUN chmod -R 777 /var/www/html/protected/runtime && chmod -R 777 /var/www/html/assets
+ ---> Running in 2fb8c8c1efc2
+Removing intermediate container 2fb8c8c1efc2
+ ---> 29a5985ebbd8
+Step 14/14 : RUN chmod a+rwx -R /var/www/html/protected/runtime && chmod a+rwx -R /var/www/html/assets
+ ---> Running in adeb6b48ae0f
+Removing intermediate container adeb6b48ae0f
+ ---> a1bae9c4fa5f
+Successfully built a1bae9c4fa5f
+Successfully tagged yii1dockerized_php:latest
+Creating yii1dockerized_db_1 ... done
+Creating yii1dockerized_php_1 ... done
+Error: No such container: docker_php_1
+Error: No such container: docker_php_1
+Error: No such container: docker_php_1
+Error: No such container: docker_php_1
+Error: No such container: docker_php_1

@@ -12,6 +12,7 @@ services:
        MYSQL_DATABASE: my_db
    php:
     build: php
+    container_name: docker_php_1
     ports:
       - '8000:80'
     restart: always

@@ -1,0 +1,80 @@
+---> c1743886bd5e
+Step 9/14 : WORKDIR /var/www/html
+ ---> Using cache
+ ---> 098bcb80045b
+Step 10/14 : RUN mkdir assets
+ ---> Using cache
+ ---> 89caf6365998
+Step 11/14 : WORKDIR /var/www/html/protected
+ ---> Using cache
+ ---> b99c548b4a29
+Step 12/14 : RUN mkdir runtime
+ ---> Using cache
+ ---> 098d2cc88bc0
+Step 13/14 : RUN chmod -R 777 /var/www/html/protected/runtime && chmod -R 777 /var/www/html/assets
+ ---> Using cache
+ ---> 29a5985ebbd8
+Step 14/14 : RUN chmod a+rwx -R /var/www/html/protected/runtime && chmod a+rwx -R /var/www/html/assets
+ ---> Using cache
+ ---> a1bae9c4fa5f
+Successfully built a1bae9c4fa5f
+Successfully tagged yii1dockerized_php:latest
+Starting yii1dockerized_db_1 ... done
+Starting docker_php_1        ... done
+cannot exec in a stopped state: unknown
+OCI runtime exec failed: exec failed: container_linux.go:348: starting container process caused "read init-p: connection reset by peer": unknown
+Error response from daemon: Container 796ccfc4cdeb86e941f990a3b8e4a805c82237c26682682ba75f782ff46c3b17 is restarting, wait until the container is running
+Error response from daemon: Container 796ccfc4cdeb86e941f990a3b8e4a805c82237c26682682ba75f782ff46c3b17 is restarting, wait until the container is running
+
+##  docker logs docker_php_1
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+(21)Is a directory: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+AH00015: Unable to open logs
